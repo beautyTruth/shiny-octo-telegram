@@ -120,6 +120,39 @@ section {
 
 /* end navbar styles */
 
+/* progress bar styles */
+.progress-wrapper {
+  position: fixed;
+  z-index: 100;
+  bottom: 2rem;
+  left: 3rem;
+}
+
+.progress {
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.progress h2 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: aliceblue;
+}
+
+.circle-wrapper {
+  display: flex;
+}
+
+.circle {
+  width: 1rem;
+  height: 1rem;
+  border: 0.1rem solid aliceblue;
+  border-radius: 50%;
+  margin: 0 0.3rem;
+}
+
+/* end progress bar styles */
+
 /* section 1 styles */
 
 .section-1 {
