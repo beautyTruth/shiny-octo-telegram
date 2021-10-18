@@ -31,6 +31,59 @@ section {
 
 /* end common styles */
 
+/* navbar styles */
+.navbar {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  top: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.logo {
+  height: 6rem;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-link {
+  font-size: 1.5rem;
+  color: aliceblue;
+  width: 15rem;
+  margin: 0 3rem;
+  text-transform: uppercase;
+  border: 0.1rem solid antiquewhite;
+  text-align: center;
+  padding: 0.2rem 0;
+  position: relative;
+  /* letter-spacing: .1rem; */
+  overflow: hidden;
+}
+
+.nav-link::before {
+  content: "";
+  position: absolute;
+  width: 150%;
+  height: 5rem;
+  background-color: crimson;
+  left: -20%;
+  transform: rotate(-40deg) translate(-4rem);
+  transform-origin: left bottom;
+  opacity: 0.8;
+  transition: left 0.3s;
+}
+
+.nav-link:hover::before {
+  left: 110%;
+}
+
+/* end navbar styles */
+
 /* section 1 styles */
 
 .section-1 {
