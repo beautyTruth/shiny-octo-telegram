@@ -6,6 +6,18 @@ let counter1 = 0;
 let counter2 = 1;
 
 const sections = document.querySelectorAll("section");
+const progress = document.querySelector(".progress h2");
+const circles = document.querySelectorAll(".circle");
+
+const progressCounter = () => {
+  progress.textContent = `${counter2}/${sections.length}`;
+
+  Array.from(circles).forEach((circle) => {
+    circle.style.backgroundColor = "transparent";
+  });
+  document.querySelector(`.circle-${counter2}`).style.backgroundColor =
+    "#faebd7";
+};
 
 window.addEventListener("wheel", (e) => {
   const deltaDawn = e.deltaY > 0;
@@ -24,6 +36,7 @@ window.addEventListener("wheel", (e) => {
     });
     counter1 = 0;
     counter2 = 1;
+    progressCounter();
     return;
   }
 
@@ -36,7 +49,10 @@ window.addEventListener("wheel", (e) => {
     });
     counter1 = 4;
     counter2 = 5;
+    progressCounter();
   }
+
+  progressCounter();
 
   document.querySelector(
     `.section-${deltaDawn ? counter1 : counter2}`

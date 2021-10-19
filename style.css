@@ -59,7 +59,7 @@ section {
   width: 15rem;
   margin: 0 3rem;
   text-transform: uppercase;
-  border: 0.1rem solid antiquewhite;
+  border: 0.1rem solid #faebd7;
   text-align: center;
   padding: 0.2rem 0;
   position: relative;
@@ -151,6 +151,11 @@ section {
   border: 0.1rem solid aliceblue;
   border-radius: 50%;
   margin: 0 0.3rem;
+  transition: background-color 0.3s;
+}
+
+.circle-1 {
+  background-color: antiquewhite;
 }
 
 /* end progress bar styles */
