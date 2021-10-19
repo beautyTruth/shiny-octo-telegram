@@ -251,6 +251,7 @@ section {
 /* section 3 styles */
 .section-3 {
   z-index: 30;
+  background-color: black;
 }
 
 .section-3-wrapper {
@@ -261,6 +262,7 @@ section {
   align-items: center;
   justify-content: center;
   position: relative;
+  transition: opacity 1.5s;
 }
 
 .section-3-heading {
@@ -283,6 +285,12 @@ section {
   width: 40rem;
   position: absolute;
   opacity: 0.7;
+  transition: all 1.5s;
+}
+
+.grapes-img:hover {
+  opacity: 1;
+  transform: scale(2);
 }
 /* end section 3 styles */
 
